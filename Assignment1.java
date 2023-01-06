@@ -19,7 +19,7 @@ public class App {
         System.out.println("=================================================");
         System.out.println("Thank you.");
         System.out.println("=================================================");
-        System.out.print("Enter student birthday (mm/dd/yyyy): ");
+        System.out.print("Enter student birthday (yyyy/mm/dd): ");
         String studentbday = scan.nextLine();
         System.out.println("=================================================");
 
@@ -29,7 +29,7 @@ public class App {
         Matcher matcher = pattern.matcher(studentEmail);
         Pattern patternnum = Pattern.compile("\\+63+\\d{10}");
         Matcher matchernum = patternnum.matcher(studentNum);
-        Pattern patternbday = Pattern.compile("\\d{2}/\\d{2}/\\d{4}");
+        Pattern patternbday = Pattern.compile("\\d{4}/\\d{2}/\\d{2}");
         Matcher matcherbday = patternbday.matcher(studentbday);
 
 
@@ -39,7 +39,7 @@ public class App {
 
         match = Pattern.matches("[\\w]+@students.national-u.edu.ph", studentEmail);
         matchnum = Pattern.matches("\\+63+\\d{10}", studentNum);
-        matchbday = Pattern.matches("\\d{2}/\\d{2}/\\d{4}", studentbday);
+        matchbday = Pattern.matches("\\d{4}/\\d{2}/\\d{2}", studentbday);
 
         if (match) {
             System.out.println("Email address: Valid");
