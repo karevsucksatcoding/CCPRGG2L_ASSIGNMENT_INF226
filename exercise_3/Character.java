@@ -1,14 +1,20 @@
 public class Character {
-    int strength;
-    int agility;
-    int intelligence;
     String name;
+    int damage;
+    int rarity;
 
-    public void sayMyName() {
-        System.out.println("Hello I am " + name);
+    public void attack() {
+        System.out.println("I am attacking with a: " + name );
     }
     
-    public void sayMyStrength() {
-        System.out.println("My strength is " + strength);
+    public void addDamage(int x) {
+        System.out.println("Damage increased from " + damage + " to " + (damage + x) + "\n");
+        return;
+    }
+
+    public String showNameandRarity() {
+        System.out.println("The weapon name is: " + name);
+        System.out.println("The weapon rarity is: " + rarity);
+        return"";
     }
 }
