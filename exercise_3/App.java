@@ -1,28 +1,13 @@
 public class App {
     public static void main(String[] args) {
 
-        Character knight = new Character();
+        Weapon sword = new Weapon();
 
-        knight.strength = 10;
-        knight.agility = 5;
-        knight.intelligence = 0;
-        knight.name = "Chen";
-        knight.sayMyName();
-
-        Character mage = new Character();
-
-        mage.strength = 0;
-        mage.agility = 5;
-        mage.intelligence = 10;
-        mage.name = "Akasha";
-        mage.sayMyName();
-
-        Character thief = new Character();
-
-        thief.strength = 5;
-        thief.agility = 10;
-        thief.intelligence = 0;
-        mage.name = "Gondar";
-        thief.sayMyName();
+        sword.name= "Sovereign Sword";
+        sword.damage= 75;
+        sword.rarity= 4;
+        sword.attack();
+        sword.addDamage(75);
+        sword.showNameandRarity();
     }
 }
