@@ -1,7 +1,7 @@
 public class App {
     public static void main(String[] args) {
 
-        Weapon sword = new Weapon();
+        Character sword = new Character();
 
         sword.name= "Sovereign Sword";
         sword.damage= 75;
